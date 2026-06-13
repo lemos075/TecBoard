@@ -1,0 +1,156 @@
+:root {
+    --Cor_destaque: #9747FF;
+    --Roxo_Hover: #8233E8;
+    --Off_White /*Texto versão dark*/: #F5f5f5;
+    --Grafite: #232323;
+    --Fundo_Dark: #0E1014;
+    --Fundo_Light: #ffffff;
+}   
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.unbounded-allsize {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bgcolor{
+    background-color: var(--Fundo_Dark);
+    color: var(--Off_White);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px 10px;
+    padding: 25px 160px 5px 160px;
+
+}
+.logo{
+    width: 120px;
+
+}
+
+.Alterar_tema{
+    width: 30px;
+    height: 30px;
+    border:none;
+    background-color: transparent;
+    background-image: url('../img/Nightheme.svg');
+    background-size: cover;
+    transition: background-image 0.4s ease;
+}
+
+.Alterar_tema:hover{
+    cursor: pointer;
+    background-image: url('../img/Daytheme.svg');
+    background-size: cover;
+    transition: background-image 0.4s ease;
+}
+.fonte1{
+    color: var(--Cor_destaque);
+    font-family: "unbounded", sans-serif;
+    font-weight: 700;
+    margin:0 0 10px 0;
+}
+.fonte2{
+    color: var(--Off_White);
+    font-family: "unbounded", sans-serif;
+    font-weight: 700;
+    margin:0;
+}
+
+p{
+    color: var(--Off_White);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 40px 0;
+}
+
+.Conteudo{
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 0 160px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.btn_demo{
+background-color: var(--Cor_destaque);
+width: 200px;
+height: 35px;
+border: none;
+border-radius: 36px;
+color: var(--Off_White);
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+transition: background-color 0.3s ease;
+}
+
+.btn_demo:hover{
+    background-color: var(--Roxo_Hover);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.img_celular{
+    width: 550px;
+    height: 350px;
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .Conteudo {
+        padding: 0 20px;
+    }
+
+    .img_celular {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .cabecalho {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .Conteudo {
+        padding: 0 20px;
+    }
+
+    .img_celular {
+        width: 170%;
+        height: auto;
+    }
+}
